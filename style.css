@@ -666,14 +666,15 @@ p {
 }
 
 .footer-thanks {
-	color: rgba(255, 255, 255, 0.6);
+	color: rgba(255, 255, 255, 0.911);
 	font-size: 0.9rem;
-	margin-bottom: 2.5rem;
+	margin-bottom: 0.4rem;
+	font-weight: 500;
 }
 
 .copyright {
 	font-size: 0.75rem;
-	color: rgba(255, 255, 255, 0.3);
+	color: rgba(255, 255, 255, 0.596);
 }
 
 /* Extra small devices fix */
