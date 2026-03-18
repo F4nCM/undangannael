@@ -176,6 +176,18 @@ document.getElementById("formUcapan").addEventListener("submit", (e) => {
 
 	listUcapan.prepend(div);
 
+	// Ganti dengan nomor WA kamu (gunakan kode negara, tanpa tanda + atau spasi)
+	const nomorWA = "6285366468282"; 
+
+	// Membuat format pesan
+	const pesan = `Halo, saya ${nama}. Berikut ucapan saya: ${ucapan}`;
+
+	// Encode pesan agar aman dibaca oleh URL browser
+	const pesanEncoded = encodeURIComponent(pesan);
+
+// Membuka link WhatsApp di tab baru
+window.open(`https://wa.me/${nomorWA}?text=${pesanEncoded}`, "_blank");
+
 	// Reset form
 	document.getElementById("nama").value = "";
 	document.getElementById("ucapan").value = "";
